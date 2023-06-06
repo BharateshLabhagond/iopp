@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>IOPP LAB-EXAM</title>
+        <style>
+           .hi{
+            font-style:italic; 
+            font-size:xx-large; 
+            background-color:rgb(255,253,208) ;
+           }
+        </style>
+    </head>
+<body class="hi">
+    <h1>Hello...!,Welcome to my Home Page</h1>
+    Enter your input<br>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vRR4fIwI-cXihZoAPGkiyd5BbvjCbrn6DQs6pVFxMXXr4VuUhv_Q5dU_QIh15_xQPW_m1ZjipKHJ41x/pub">1:My Docs</a><br>
+    2:My Sheets<br>
+    3:My Blog<br>
+    4:My Presentation<br>
+     <input type="text" id="input" name="selection">
+     <button type="button" name="button" onclick="myFunc()">Submit</button>
+     <script>
+        function myFunc(){
+            var x = document.getElementById("input").value;
+            
+            if(x==1){
+                window.open("https://docs.google.com/document/d/e/2PACX-1vRR4fIwI-cXihZoAPGkiyd5BbvjCbrn6DQs6pVFxMXXr4VuUhv_Q5dU_QIh15_xQPW_m1ZjipKHJ41x/pub");
+            }
+
+            if(x==2){
+                window.open("https://docs.google.com/spreadsheets/d/e/2PACX-1vR0tH06nWhefDLcN1fkqYAjwCR2le8uvX5yp_Z01I7yPfv5YoZ2rBjfJ-rrEybJl8Zlntfh_SKPS429/pubhtml");
+            }
+
+            if(x==3){
+                window.open("https://2sd20cs031.blogspot.com/2023/06/1.html");
+            }
+
+            if(x==4){
+                window.open("https://docs.google.com/presentation/d/e/2PACX-1vSo7tFttvGQqaow5fxbx2Bm05952hms083VtTy_Nylxlu6Dz35DKxUQ4686U--TbYoisN1h0qQjOSfg/pub?start=false&loop=false&delayms=3000");
+            }
+
+            else{
+                alert("Invalid input");
+            }
+        }
+     </script>
+</body>
+
+</style>
+</html>
